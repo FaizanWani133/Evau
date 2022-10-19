@@ -12,17 +12,22 @@ function Booking() {
             headers:{"Content-Type": "application/json"}
         })
         .then((res) => res.json())
-        .then((res) => console.log(res))
+        .then((res) => getData())
         .catch((err) => console.log(err));
+
+    }
+    function getData (){
+      fetch(`http://localhost:8080/moviesBooked`)
+      .then((res) => res.json())
+      .then((res) => setData(res))
+      .catch((err) => console.log(err));
 
     }
   
   useEffect(() => {
-    fetch(`http://localhost:8080/moviesBooked`)
-      .then((res) => res.json())
-      .then((res) => setData(res))
-      .catch((err) => console.log(err));
-  }, [data]);
+    getData()
+   
+  }, []);
   return (
     <TableContainer width={"60%"} margin="0 auto">
   <Table variant='striped' colorScheme='teal'>

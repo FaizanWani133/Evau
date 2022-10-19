@@ -40,7 +40,7 @@ function Login() {
     
     
   return (
-    <Box width="30%">
+    <Box width="30%" margin="0 auto">
 
         <Input value={email} onChange={(e)=>setEmail(e.target.value)} placeholder='Email' />
         <Input value={password} onChange={(e)=>setPassword(e.target.value)} placeholder='password' />

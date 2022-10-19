@@ -33,8 +33,10 @@ function Movie() {
   const [name, setName] = useState();
   const [booked, setBooked] = useState([]);
   const [details, setDetails] = useState({});
+  const [flag,setFlag] = useState(false);
 
   function addBooking() {
+    setFlag(!flag)
     const movie = {
       ...data,
       movie_id: data.id,
@@ -53,6 +55,7 @@ function Movie() {
       .catch((err) => console.log(err));
   }
   function getDetails(id){
+    
     fetch(`http://localhost:8080/moviesBooked/${id}`)
       .then((res) => res.json())
       .then((res) => setDetails(res))
@@ -73,7 +76,7 @@ function Movie() {
       .then((res) => res.json())
       .then((res) => setBooked(res))
       .catch((err) => console.log(err));
-  });
+  },[flag]);
 
   return (
     <Flex gap={"20px"}>
