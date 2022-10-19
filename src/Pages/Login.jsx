@@ -1,4 +1,4 @@
-import {Button, Box, Input, HStack } from '@chakra-ui/react'
+import {Button, Input, HStack } from '@chakra-ui/react'
 
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
