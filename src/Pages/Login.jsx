@@ -2,7 +2,7 @@ import {Button, Box, Input } from '@chakra-ui/react'
 
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 import { getError, getLoading, getSuccess } from '../Store/Auth/Actions';
 
 
@@ -10,8 +10,8 @@ function Login() {
     const dispatch = useDispatch();
     const [email,setEmail] = useState("");
     const [password,setPassword] = useState("");
-    const {loading,error,isAuth} = useSelector(state=>state)
-    const navigate = useNavigate();
+    const {isAuth} = useSelector(state=>state)
+   
 
 
     function handleLogin(){

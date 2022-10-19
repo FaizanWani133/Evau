@@ -1,5 +1,5 @@
-import { DeleteIcon } from "@chakra-ui/icons";
-import { Button, Flex, IconButton, Table, TableCaption, TableContainer, Tbody, Td, Th, Thead, Tr } from "@chakra-ui/react";
+
+import { Button, Table, TableCaption, TableContainer, Tbody, Td, Th, Thead, Tr } from "@chakra-ui/react";
 
 import React, { useEffect, useState } from "react";
 
@@ -12,7 +12,7 @@ function Booking() {
             headers:{"Content-Type": "application/json"}
         })
         .then((res) => res.json())
-        .then((res) => getData())
+        .then(() => getData())
         .catch((err) => console.log(err));
 
     }

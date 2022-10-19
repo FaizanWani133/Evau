@@ -7,7 +7,7 @@ import {
   VStack,
   Button,
   Input,
-  useDisclosure,
+ 
   Popover,
   PopoverTrigger,
   PopoverContent,
@@ -22,11 +22,7 @@ import { useParams } from "react-router-dom";
 
 
 function Movie() {
-  const {
-    isOpen: isVisible,
-    onClose,
-    onOpen,
-  } = useDisclosure({ defaultIsOpen: false })
+ 
   const { id } = useParams();
   const [data, setData] = useState([]);
   const [seats, setSeats] = useState();

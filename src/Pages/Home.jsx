@@ -1,4 +1,4 @@
-import { Box, HStack, Image, Text, VStack, Wrap } from '@chakra-ui/react'
+import { Image, Text, VStack, Wrap } from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom';
 
