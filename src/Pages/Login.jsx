@@ -25,12 +25,16 @@ function Login() {
             method:"POST",
             body,
             headers:{"Content-Type": "application/json"}
-        }).then(res=>res.json()).then(res=>{dispatch(getSuccess())
-        navigate("/")}).catch(err=>dispatch(getError()))
+        }).then(res=>res.json()).then(res=>{if(res.token){
+            dispatch(getSuccess());
+        }else{
+            dispatch(getError());
+        }
+        }).catch(err=>console.log(err))
 
     }
     if(isAuth){
-        <Navigate to="/"/>
+       return <Navigate to="/"/>
     }
 
     

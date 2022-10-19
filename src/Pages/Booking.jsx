@@ -1,5 +1,6 @@
 import { DeleteIcon } from "@chakra-ui/icons";
-import { Flex, IconButton, Table, TableCaption, TableContainer, Tbody, Td, Th, Thead, Tr } from "@chakra-ui/react";
+import { Button, Flex, IconButton, Table, TableCaption, TableContainer, Tbody, Td, Th, Thead, Tr } from "@chakra-ui/react";
+
 import React, { useEffect, useState } from "react";
 
 function Booking() {
@@ -21,7 +22,7 @@ function Booking() {
       .then((res) => res.json())
       .then((res) => setData(res))
       .catch((err) => console.log(err));
-  }, []);
+  }, [data]);
   return (
     <TableContainer width={"60%"} margin="0 auto">
   <Table variant='striped' colorScheme='teal'>
@@ -37,7 +38,7 @@ function Booking() {
         {data.map(el=><Tr>
         <Td>{el.movie_id}</Td>
         <Td>{el.title}</Td>
-        <Td ><IconButton onClick={()=>handleDelete(el.id)} icon={<DeleteIcon/>}></IconButton></Td>
+        <Td ><Button onClick={()=>handleDelete(el.id)} >Cancel Booking</Button></Td>
       </Tr>)}
       
       

@@ -121,5 +121,21 @@
       "vote_count": 881
     }
   ],
-  "moviesBooked": []
+  "moviesBooked": [
+    {
+      "id": 2,
+      "title": "Blasted",
+      "original_language": "no",
+      "original_title": "Blasted - Gutta vs. Aliens",
+      "overview": "When a former childhood friend crashes Sebastian's bachelor party and makes it all about himself, only an alien invasion can make them put aside their bad blood and reunite as the kick-ass laser-tag duo they once were.",
+      "popularity": 21.055,
+      "poster_path": "https://image.tmdb.org/t/p/original/aEB9ogCBCUpSFTZVhD7NvTh44VW.jpg",
+      "release_date": "2022-06-22",
+      "vote_average": 5.727,
+      "vote_count": 11,
+      "movie_id": 2,
+      "seat": "sdfsdf",
+      "name": "xcvsfgsdf"
+    }
+  ]
 }

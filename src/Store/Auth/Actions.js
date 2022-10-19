@@ -11,7 +11,9 @@ export const getLoading=()=>{
     }
 }
 export const getSuccess=()=>{
+
     return{
+
         type:SUCCESS
     }
 }
