@@ -19,7 +19,7 @@ useEffect(()=>{
             data.map(el=><VStack p={4} key={el.id} width={"230px"}  border={"1px solid grey"}>
                 <Image  src={el.poster_path}></Image>
                 <Text>{el.title}</Text>
-                <NavLink to={`/movie/${el.id}`}>More Details ...</NavLink>
+                <NavLink to={`/movie/${el.id}`} style={{color:"blue"}}>More Details ...</NavLink>
 
             </VStack>)
         }

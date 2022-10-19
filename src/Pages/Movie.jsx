@@ -81,7 +81,7 @@ function Movie() {
         <Image width={"400px"} src={data.poster_path}></Image>
       </Box>
       <VStack align={"start"}>
-        <Text>{data.title}</Text>
+        <Text fontWeight="700" fontSize="20px">{data.title}</Text>
         <Text>Language: {data.original_language}</Text>
         <Text>{data.release_date}</Text>
         <Text>Popularity : {data.popularity}</Text>
@@ -92,12 +92,14 @@ function Movie() {
           {!booked.find((el) => el.movie_id === data.id) ? (
             <>
               <Input
-                width={"70px"}
+                width={"100px"}
                 type={"text"}
                 value={seats}
                 onChange={(e) => setSeats(e.target.value)}
+                placeholder="Seat No"
               ></Input>
               <Input
+              placeholder="Name"
                 width={"200px"}
                 value={name}
                 type="text"
