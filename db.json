@@ -121,21 +121,5 @@
       "vote_count": 881
     }
   ],
-  "moviesBooked": [
-    {
-      "id": 3,
-      "title": "The Man From Toronto",
-      "original_language": "en",
-      "original_title": "The Man From Toronto",
-      "overview": "In a case of mistaken identity, the world’s deadliest assassin, known as the Man from Toronto, and a New York City screw-up are forced to team up after being confused for each other at an Airbnb.",
-      "popularity": 577.181,
-      "poster_path": "https://image.tmdb.org/t/p/original/5TdKvZimLSJHPQW8t3ctlsusnmH.jpg",
-      "release_date": "2022-06-24",
-      "vote_average": 6.145,
-      "vote_count": 162,
-      "movie_id": 3,
-      "seat": "A4",
-      "name": "sdfasd"
-    }
-  ]
+  "moviesBooked": []
 }

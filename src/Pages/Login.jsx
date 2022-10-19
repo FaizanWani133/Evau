@@ -1,4 +1,4 @@
-import {Button, Input, HStack } from '@chakra-ui/react'
+import {Button, Input, VStack } from '@chakra-ui/react'
 
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
@@ -40,13 +40,13 @@ function Login() {
     
     
   return (
-    <HStack mt={"30px"} width="30%" margin="0 auto" spacing={"20px"} p="4" border={"1px solid grey"} borderRadius="10px">
+    <VStack mt={"30px"} width="30%" margin="0 auto" spacing={"20px"} p="4" border={"1px solid grey"} borderRadius="10px">
 
         <Input value={email} onChange={(e)=>setEmail(e.target.value)} placeholder='Email' />
         <Input value={password} onChange={(e)=>setPassword(e.target.value)} placeholder='password' />
         <Button onClick={handleLogin}>Login</Button>
    
-      </HStack>
+      </VStack>
   )
 }
 
